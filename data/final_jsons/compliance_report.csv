@@ -1,0 +1,6 @@
+Regulatory Clause,Compliant with Bank Policy,Compliant with System Rules,Explanation
+Retail Mortgage Lending Standards Act (REG-MORT-001),Yes,Yes,Policy: ltv_standard_max [POLICY-001]: ✓ OK: 80.0 ≤ 80.0 | System: ltv_standard_max [SYS-R-100]: ✓ OK: 80.0 ≤ 80.0
+Retail Mortgage Lending Standards Act (REG-MORT-002),No,No,"Policy: ltv_highest_risk_max [POLICY-001]: ✗ FAIL: allows 80.0, reg caps at 75.0 | System: ltv_highest_risk_max [SYS-R-100]: ✗ FAIL: allows 80.0, reg caps at 75.0"
+Anti-Money Laundering (AML) Directive (CLAUSE-003),Yes,No,"Policy: min_id_count [POLICY-003]: ✓ OK: 2.0 ≥ 2.0 | System: min_id_count [SYS-R-103]: ✗ FAIL: requires 1.0, reg min is 2.0"
+Climate Risk & Flood Protection Act (REG-ENV-099),No,No,Policy: Flood_Insurance_Mandatory: ✗ NO MATCHING RULE FOUND - cannot verify compliance | System: Flood_Insurance_Mandatory: ✗ NO MATCHING RULE FOUND - cannot verify compliance
+Fair Lending & Affordability Act (REG-INC-201),Yes,No,"Policy: dti_max [POLICY-004]: ✓ OK: 43.0 ≤ 43.0 | System: dti_max [SYS-R-102]: ✗ FAIL: allows 45.0, reg caps at 43.0"
