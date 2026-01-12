@@ -1,8 +1,15 @@
+# Core dependencies
 pdfplumber
-pytesseract
-Pillow
 python-docx
-pandas
 openpyxl
-transformers
-torch
+
+# LLM
+langchain-ollama
+
+# API
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Utilities
+pandas
