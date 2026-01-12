@@ -1,0 +1,8 @@
+pdfplumber
+pytesseract
+Pillow
+python-docx
+pandas
+openpyxl
+transformers
+torch
