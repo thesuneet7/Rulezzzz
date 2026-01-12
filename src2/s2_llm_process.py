@@ -378,7 +378,7 @@ def validate_and_dedupe(clauses: list[dict]) -> list[dict]:
 def main():
     project_root = Path(__file__).parent.parent
     input_file = project_root / "data" / "processed" / "regulation_extracted.txt"
-    output_dir = project_root / "data" / "processed"
+    output_dir = project_root / "data" / "final_jsons"
     intermediate_dir = project_root / "intermediate"
     
     intermediate_dir.mkdir(exist_ok=True)

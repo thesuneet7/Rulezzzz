@@ -22,7 +22,7 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-100 | Standard LTV Check | Underwriting_Engine | ltv_ratio | LTE | 80 | Percent | 2024-02-05 | Max LTV for standard loans.",
-    "extracted_at": "2026-01-12T19:15:37.355137"
+    "extracted_at": "2026-01-12T19:59:16.341826"
   },
   {
     "rule_id": "SYS-R-101",
@@ -47,7 +47,7 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-101 | High Risk LTV Check | Underwriting_Engine | ltv_ratio | LTE | 80 | Percent | 2024-02-05 | Max LTV for credit score < 600. (Matches Policy 1.2)",
-    "extracted_at": "2026-01-12T19:15:46.485046"
+    "extracted_at": "2026-01-12T19:59:25.288601"
   },
   {
     "rule_id": "SYS-R-102",
@@ -72,7 +72,7 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-102 | DTI Threshold | Affordability_Calc | dti_ratio | LTE | 45 | Percent | 2023-01-01 | NON-COMPLIANCE SEED #1: Policy says 43%, but code is hardcoded to 45% (Loose Constraint).",
-    "extracted_at": "2026-01-12T19:15:56.278744"
+    "extracted_at": "2026-01-12T19:59:34.845039"
   },
   {
     "rule_id": "SYS-R-103",
@@ -97,7 +97,7 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-103 | KYC ID Count | Onboarding_App | id_doc_count | GTE | 1 | Integer | 2022-06-01 | NON-COMPLIANCE SEED #2: Policy requires 2 IDs, but system only enforces 1 (Stale Config).",
-    "extracted_at": "2026-01-12T19:16:05.728212"
+    "extracted_at": "2026-01-12T19:59:44.135375"
   },
   {
     "rule_id": "SYS-R-104",
@@ -122,7 +122,7 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-104 | Min Age Check | Onboarding_App | applicant_age | GT | 18 | Integer | 2020-01-01 | Boundary Condition Bug: Policy implies >= 18. Code uses > 18, so 18-year-olds are rejected.",
-    "extracted_at": "2026-01-12T19:16:14.610472"
+    "extracted_at": "2026-01-12T19:59:53.049233"
   },
   {
     "rule_id": "SYS-R-105",
@@ -147,6 +147,6 @@
     ],
     "source": "SYSTEM",
     "source_text": "SYS-R-105 | Collateral Value | Appraisal_System | appraisal_value | GT | 0 | Currency | 2024-01-01 | Sanity check for positive appraisal value.",
-    "extracted_at": "2026-01-12T19:16:22.741856"
+    "extracted_at": "2026-01-12T20:00:01.139571"
   }
 ]

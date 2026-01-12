@@ -414,6 +414,7 @@ def validate_and_dedupe(rules: list[dict]) -> list[dict]:
 def main():
     project_root = Path(__file__).parent.parent
     processed_dir = project_root / "data" / "processed"
+    final_dir = project_root / "data" / "final_jsons"
     intermediate_dir = project_root / "intermediate"
     
     intermediate_dir.mkdir(exist_ok=True)
@@ -438,7 +439,7 @@ def main():
         print(f"   Final count: {len(policy_rules)} valid rules")
         
         # Save policy rules
-        policy_output = processed_dir / "bank_policy_rules.json"
+        policy_output = final_dir / "bank_policy_rules.json"
         with open(policy_output, 'w', encoding='utf-8') as f:
             json.dump(policy_rules, f, indent=2, ensure_ascii=False)
         print(f"   ✓ Saved: {policy_output}")
@@ -462,7 +463,7 @@ def main():
         print(f"   Final count: {len(system_rules)} valid rules")
         
         # Save system rules
-        system_output = processed_dir / "system_rules.json"
+        system_output = final_dir / "system_rules.json"
         with open(system_output, 'w', encoding='utf-8') as f:
             json.dump(system_rules, f, indent=2, ensure_ascii=False)
         print(f"   ✓ Saved: {system_output}")
@@ -492,8 +493,8 @@ def main():
                 print(f"      - [{rule['rule_id']}] {t.get('human_readable')}")
     
     print(f"\n✅ Output files:")
-    print(f"   - {processed_dir}/bank_policy_rules.json")
-    print(f"   - {processed_dir}/system_rules.json")
+    print(f"   - {final_dir}/bank_policy_rules.json")
+    print(f"   - {final_dir}/system_rules.json")
     
     return policy_rules, system_rules
 
