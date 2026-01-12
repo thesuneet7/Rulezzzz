@@ -1,0 +1,48 @@
+{
+  "extraction_timestamp": "2026-01-12T18:48:05.940058",
+  "source_file": "/Users/suneet/Downloads/my-compliance-engine/data/processed/regulation_extracted.txt",
+  "total_clauses": 5,
+  "schema_version": "1.0",
+  "by_category": {
+    "MORTGAGE": 2,
+    "KYC_AML": 1,
+    "CONSUMER_PROTECTION": 1,
+    "LENDING": 1
+  },
+  "by_risk_level": {
+    "HIGH": 3,
+    "LOW": 2
+  },
+  "all_thresholds": [
+    {
+      "clause_id": "REG-MORT-001",
+      "parameter": "ltv_standard_max",
+      "human_readable": null,
+      "value_numeric": 80.0
+    },
+    {
+      "clause_id": "REG-MORT-002",
+      "parameter": "ltv_highest_risk_max",
+      "human_readable": "Max LTV for high-risk borrowers capped at 75%",
+      "value_numeric": 75.0
+    },
+    {
+      "clause_id": "CLAUSE-003",
+      "parameter": "min_id_count",
+      "human_readable": null,
+      "value_numeric": 2.0
+    },
+    {
+      "clause_id": "REG-ENV-099",
+      "parameter": "Flood_Insurance_Mandatory",
+      "human_readable": "Mandatory flood insurance coverage",
+      "value_numeric": true
+    },
+    {
+      "clause_id": "REG-INC-201",
+      "parameter": "dti_max",
+      "human_readable": null,
+      "value_numeric": 43.0
+    }
+  ]
+}

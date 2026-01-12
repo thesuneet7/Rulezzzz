@@ -1,0 +1,118 @@
+[
+  {
+    "rule_id": "POLICY-001",
+    "rule_code": null,
+    "rule_title": null,
+    "document_name": "Global Retail Lending Policy Manual (v2.4)",
+    "section": "1.1",
+    "effective_date": "2024-02-01",
+    "category": "MORTGAGE",
+    "description": "For standard residential mortgages, the maximum Loan-to-Value (LTV) ratio is capped at 80%. Loans exceeding this amount require explicit approval from the Chief Risk Officer.",
+    "applies_to": "standard residential mortgages",
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "ltv_ratio",
+        "value": "80",
+        "value_numeric": 80.0,
+        "operator": "LTE",
+        "unit": "%",
+        "human_readable": "capped at 80%"
+      }
+    ],
+    "source": "POLICY",
+    "source_text": "Document: Global Retail Lending Policy Manual (v2.4)\nEffective Date: 2024-02-01 Owner: Credit Risk Committee Classification: Internal Use Only\n1. Credit Risk Parameters\n1.1 Standard Loan-to-Value (LTV) Limits To ensure prudent lending practices, the Bank establishes maximum LTV ratios for all retail mortgage products.\nPolicy Rule: For standard residential mortgages, the maximum Loan-to-Value (LTV) ratio is capped at 80%. Loans exceeding this amount require explicit approval from the Chief Risk Officer.",
+    "extracted_at": "2026-01-12T19:14:28.678509"
+  },
+  {
+    "rule_id": "POLICY-002",
+    "rule_code": null,
+    "rule_title": "High-Risk Borrower Adjustments",
+    "document_name": null,
+    "section": "1.2",
+    "effective_date": null,
+    "category": "KYC_AML",
+    "description": "The Bank defines 'High-Risk Borrowers' as individuals with a FICO Credit Score below 600. In order to remain competitive while managing risk, the maximum LTV for High-Risk Borrowers is capped at 80%. (Note: This is consistent with our standard cap, as we believe credit score alone should not dictate LTV tighter than the standard).",
+    "applies_to": "High-Risk Borrowers with a FICO Credit Score below 600",
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "ltv_ratio",
+        "value": "80",
+        "value_numeric": 80.0,
+        "operator": "LTE",
+        "unit": "%",
+        "human_readable": "Max LTV 80%"
+      }
+    ],
+    "source": "POLICY",
+    "source_text": "1.2 High-Risk Borrower Adjustments The Bank defines \"High-Risk Borrowers\" as individuals with a FICO Credit Score below 600.\nPolicy Rule: In order to remain competitive while managing risk, the maximum LTV for High-Risk Borrowers is capped at 80%. (Note: This is consistent with our standard cap, as we believe credit score alone should not dictate LTV tighter than the standard).",
+    "extracted_at": "2026-01-12T19:14:41.282658"
+  },
+  {
+    "rule_id": "POLICY-003",
+    "rule_code": null,
+    "rule_title": null,
+    "document_name": "Borrower Eligibility & Affordability",
+    "section": "2.1 Identity Verification (KYC)",
+    "effective_date": null,
+    "category": "IDENTITY",
+    "description": "The Bank adheres to strict Anti-Money Laundering (AML) standards. Policy Rule: Loan Officers must collect and verify a minimum of two (2) distinct forms of government-issued identification (e.g., Passport, Driver's License) for every applicant.",
+    "applies_to": null,
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "min_id_count",
+        "value": "2",
+        "value_numeric": 2.0,
+        "operator": "GTE",
+        "unit": null,
+        "human_readable": "Min 2 IDs required"
+      }
+    ],
+    "source": "POLICY",
+    "source_text": "2. Borrower Eligibility & Affordability\n2.1 Identity Verification (KYC) The Bank adheres to strict Anti-Money Laundering (AML) standards.\nPolicy Rule: Loan Officers must collect and verify a minimum of two (2) distinct forms of government-issued identification (e.g., Passport, Driver's License) for every applicant.",
+    "extracted_at": "2026-01-12T19:14:51.743597"
+  },
+  {
+    "rule_id": "POLICY-004",
+    "rule_code": null,
+    "rule_title": null,
+    "document_name": null,
+    "section": "2.2",
+    "effective_date": null,
+    "category": "AFFORDABILITY",
+    "description": "The Total Debt-to-Income (DTI) ratio must not exceed 43%. Applicants with DTI above this threshold are automatically declined.",
+    "applies_to": "Applicants",
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "dti_ratio",
+        "value": "43",
+        "value_numeric": 43.0,
+        "operator": "LTE",
+        "unit": "%",
+        "human_readable": "Max DTI 43%"
+      }
+    ],
+    "source": "POLICY",
+    "source_text": "2.2 Debt-to-Income (DTI) Ratios Affordability is calculated based on Gross Monthly Income.\nPolicy Rule: The Total Debt-to-Income (DTI) ratio must not exceed 43%. Applicants with DTI above this threshold are automatically declined.",
+    "extracted_at": "2026-01-12T19:15:00.228200"
+  },
+  {
+    "rule_id": "POLICY-005",
+    "rule_code": null,
+    "rule_title": null,
+    "document_name": null,
+    "section": "3.1",
+    "effective_date": null,
+    "category": "COLLATERAL",
+    "description": "All properties must undergo a full interior and exterior appraisal by a licensed third-party appraiser.",
+    "applies_to": null,
+    "conditions": null,
+    "thresholds": [],
+    "source": "POLICY",
+    "source_text": "3. Collateral Valuation\n3.1 Appraisal Requirements All properties must undergo a full interior and exterior appraisal by a licensed third-party appraiser.",
+    "extracted_at": "2026-01-12T19:15:05.454976"
+  }
+]

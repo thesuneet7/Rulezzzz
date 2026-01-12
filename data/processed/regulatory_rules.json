@@ -1,0 +1,132 @@
+[
+  {
+    "clause_id": "REG-MORT-001",
+    "clause_code": "REG-MORT-001",
+    "clause_title": null,
+    "regulation_name": "Retail Mortgage Lending Standards Act",
+    "section": "4.1.a",
+    "effective_date": "2024-01-01",
+    "category": "MORTGAGE",
+    "description": "For all standard retail mortgage loans secured by a principal residence, the Loan-to-Value (LTV) ratio shall not exceed 80% without private mortgage insurance.",
+    "applies_to": null,
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "ltv_standard_max",
+        "value": "80.0",
+        "value_numeric": 80.0,
+        "operator": "LTE",
+        "unit": null,
+        "human_readable": null
+      }
+    ],
+    "compliance_check": "Verify that the LTV ratio does not exceed 80%",
+    "risk_level": "HIGH",
+    "source_text": "REG-MORT-001 - Retail Mortgage Lending Standards Act\nSection: 4.1.a | Effective: 2024-01-01\nText: For all standard retail mortgage loans secured by a principal residence, the Loan-to-Value (LTV) ratio shall not exceed 80% without private mortgage insurance.\nParam: LTV_Standard_Max | Val: 80.0 | Op: LTE",
+    "extracted_at": "2026-01-12T18:47:19.168681"
+  },
+  {
+    "clause_id": "REG-MORT-002",
+    "clause_code": "REG-MORT-002",
+    "clause_title": null,
+    "regulation_name": "Retail Mortgage Lending Standards Act",
+    "section": "4.1.b",
+    "effective_date": "2024-01-01",
+    "category": "MORTGAGE",
+    "description": "For high-risk borrowers (defined as Credit Score < 600), the maximum allowable Loan-to-Value (LTV) ratio is strictly capped at 75%",
+    "applies_to": "high-risk borrowers with a Credit Score < 600",
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "ltv_highest_risk_max",
+        "value": "75.0",
+        "value_numeric": 75.0,
+        "operator": "LTE",
+        "unit": null,
+        "human_readable": "Max LTV for high-risk borrowers capped at 75%"
+      }
+    ],
+    "compliance_check": "Verify that the LTV ratio for high-risk borrowers does not exceed 75%",
+    "risk_level": "HIGH",
+    "source_text": "REG-MORT-002 - Retail Mortgage Lending Standards Act\nSection: 4.1.b | Effective: 2024-01-01\nText: For high-risk borrowers (defined as Credit Score < 600), the maximum allowable Loan-to-Value (LTV) ratio is strictly capped at 75%.\nParam: LTV_HighRisk_Max | Val: 75.0 | Op: LTE",
+    "extracted_at": "2026-01-12T18:47:32.245729"
+  },
+  {
+    "clause_id": "CLAUSE-003",
+    "clause_code": null,
+    "clause_title": null,
+    "regulation_name": "Anti-Money Laundering (AML) Directive",
+    "section": "12.3",
+    "effective_date": "2023-06-15",
+    "category": "KYC_AML",
+    "description": "All mortgage applicants must provide at least two (2) distinct forms of government-issued identification prior to loan origination.",
+    "applies_to": null,
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "min_id_count",
+        "value": "2",
+        "value_numeric": 2.0,
+        "operator": "GTE",
+        "unit": null,
+        "human_readable": null
+      }
+    ],
+    "compliance_check": "Verify that all mortgage applicants provide at least two distinct forms of government-issued identification prior to loan origination.",
+    "risk_level": "LOW",
+    "source_text": "REG-KYC-105 - Anti-Money Laundering (AML) Directive\nSection: 12.3 | Effective: 2023-06-15\nText: All mortgage applicants must provide at least two (2) distinct forms of government-issued identification prior to loan origination.\nParam: Min_ID_Count | Val: 2 | Op: GTE",
+    "extracted_at": "2026-01-12T18:47:42.547838"
+  },
+  {
+    "clause_id": "REG-ENV-099",
+    "clause_code": "REG-ENV-099",
+    "clause_title": null,
+    "regulation_name": "Climate Risk & Flood Protection Act",
+    "section": "22.1",
+    "effective_date": "2024-01-01",
+    "category": "CONSUMER_PROTECTION",
+    "description": "Mortgages for properties located in designated 'Zone A' flood areas must require mandatory flood insurance coverage equal to the full replacement cost of the property.",
+    "applies_to": "properties located in designated 'Zone A' flood areas",
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "Flood_Insurance_Mandatory",
+        "value": "true",
+        "value_numeric": true,
+        "operator": "EQUALS",
+        "unit": null,
+        "human_readable": "Mandatory flood insurance coverage"
+      }
+    ],
+    "compliance_check": "Verify that the mortgage contract includes mandatory flood insurance coverage equal to the full replacement cost of the property.",
+    "risk_level": "HIGH",
+    "source_text": "REG-ENV-099 - Climate Risk & Flood Protection Act\nSection: 22.1 | Effective: 2024-01-01\nText: Mortgages for properties located in designated 'Zone A' flood areas must require mandatory flood insurance coverage equal to the full replacement cost of the property.\nParam: Flood_Insurance_Mandatory | Val: True | Op: EQUALS",
+    "extracted_at": "2026-01-12T18:47:54.875913"
+  },
+  {
+    "clause_id": "REG-INC-201",
+    "clause_code": "REG-INC-201",
+    "clause_title": null,
+    "regulation_name": "Fair Lending & Affordability Act",
+    "section": "8.4",
+    "effective_date": "2023-01-01",
+    "category": "LENDING",
+    "description": "The Debt-to-Income (DTI) ratio for any qualified mortgage must not exceed 43% of the borrower's gross monthly income.",
+    "applies_to": null,
+    "conditions": null,
+    "thresholds": [
+      {
+        "parameter": "dti_max",
+        "value": "43.0",
+        "value_numeric": 43.0,
+        "operator": "LTE",
+        "unit": null,
+        "human_readable": null
+      }
+    ],
+    "compliance_check": "Calculate the DTI ratio and ensure it does not exceed 43%",
+    "risk_level": "LOW",
+    "source_text": "REG-INC-201 - Fair Lending & Affordability Act\nSection: 8.4 | Effective: 2023-01-01\nText: The Debt-to-Income (DTI) ratio for any qualified mortgage must not exceed 43% of the borrower's gross monthly income.\nParam: DTI_Max | Val: 43.0 | Op: LTE",
+    "extracted_at": "2026-01-12T18:48:05.936571"
+  }
+]

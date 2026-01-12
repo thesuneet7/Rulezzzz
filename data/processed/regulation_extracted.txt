@@ -1,0 +1,27 @@
+Regulatory Clauses Database
+REG-MORT-001 - Retail Mortgage Lending Standards Act
+Section: 4.1.a | Effective: 2024-01-01
+Text: For all standard retail mortgage loans secured by a principal residence, the Loan-to-Value (LTV) ratio
+shall not exceed 80% without private mortgage insurance.
+Param: LTV_Standard_Max | Val: 80.0 | Op: LTE
+REG-MORT-002 - Retail Mortgage Lending Standards Act
+Section: 4.1.b | Effective: 2024-01-01
+Text: For high-risk borrowers (defined as Credit Score < 600), the maximum allowable Loan-to-Value (LTV)
+ratio is strictly capped at 75%.
+Param: LTV_HighRisk_Max | Val: 75.0 | Op: LTE
+REG-KYC-105 - Anti-Money Laundering (AML) Directive
+Section: 12.3 | Effective: 2023-06-15
+Text: All mortgage applicants must provide at least two (2) distinct forms of government-issued identification
+prior to loan origination.
+Param: Min_ID_Count | Val: 2 | Op: GTE
+REG-ENV-099 - Climate Risk & Flood Protection Act
+Section: 22.1 | Effective: 2024-01-01
+Text: Mortgages for properties located in designated 'Zone A' flood areas must require mandatory flood
+insurance coverage equal to the full replacement cost of the property.
+Param: Flood_Insurance_Mandatory | Val: True | Op: EQUALS
+REG-INC-201 - Fair Lending & Affordability Act
+Section: 8.4 | Effective: 2023-01-01
+Text: The Debt-to-Income (DTI) ratio for any qualified mortgage must not exceed 43% of the borrower's gross
+monthly income.
+Param: DTI_Max | Val: 43.0 | Op: LTE
+Page 1

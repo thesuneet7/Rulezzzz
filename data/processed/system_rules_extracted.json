@@ -1,0 +1,124 @@
+{
+  "source_file": "system_rules.xlsx",
+  "file_type": "xlsx",
+  "extraction_timestamp": "2026-01-12T19:02:51.645977",
+  "sheets": [
+    {
+      "sheet_name": "Rules Data",
+      "rows": [
+        {
+          "row_index": 0,
+          "values": [
+            "rule_id",
+            "rule_name",
+            "system_module",
+            "parameter_name",
+            "operator",
+            "threshold_value",
+            "data_type",
+            "last_deployment_date",
+            "description"
+          ]
+        },
+        {
+          "row_index": 1,
+          "values": [
+            "SYS-R-100",
+            "Standard LTV Check",
+            "Underwriting_Engine",
+            "ltv_ratio",
+            "LTE",
+            "80",
+            "Percent",
+            "2024-02-05",
+            "Max LTV for standard loans."
+          ]
+        },
+        {
+          "row_index": 2,
+          "values": [
+            "SYS-R-101",
+            "High Risk LTV Check",
+            "Underwriting_Engine",
+            "ltv_ratio",
+            "LTE",
+            "80",
+            "Percent",
+            "2024-02-05",
+            "Max LTV for credit score < 600. (Matches Policy 1.2)"
+          ]
+        },
+        {
+          "row_index": 3,
+          "values": [
+            "SYS-R-102",
+            "DTI Threshold",
+            "Affordability_Calc",
+            "dti_ratio",
+            "LTE",
+            "45",
+            "Percent",
+            "2023-01-01",
+            "NON-COMPLIANCE SEED #1: Policy says 43%, but code is hardcoded to 45% (Loose Constraint)."
+          ]
+        },
+        {
+          "row_index": 4,
+          "values": [
+            "SYS-R-103",
+            "KYC ID Count",
+            "Onboarding_App",
+            "id_doc_count",
+            "GTE",
+            "1",
+            "Integer",
+            "2022-06-01",
+            "NON-COMPLIANCE SEED #2: Policy requires 2 IDs, but system only enforces 1 (Stale Config)."
+          ]
+        },
+        {
+          "row_index": 5,
+          "values": [
+            "SYS-R-104",
+            "Min Age Check",
+            "Onboarding_App",
+            "applicant_age",
+            "GT",
+            "18",
+            "Integer",
+            "2020-01-01",
+            "Boundary Condition Bug: Policy implies >= 18. Code uses > 18, so 18-year-olds are rejected."
+          ]
+        },
+        {
+          "row_index": 6,
+          "values": [
+            "SYS-R-105",
+            "Collateral Value",
+            "Appraisal_System",
+            "appraisal_value",
+            "GT",
+            "0",
+            "Currency",
+            "2024-01-01",
+            "Sanity check for positive appraisal value."
+          ]
+        }
+      ],
+      "headers": [
+        "rule_id",
+        "rule_name",
+        "system_module",
+        "parameter_name",
+        "operator",
+        "threshold_value",
+        "data_type",
+        "last_deployment_date",
+        "description"
+      ]
+    }
+  ],
+  "full_text": "[Rules Data] rule_id | rule_name | system_module | parameter_name | operator | threshold_value | data_type | last_deployment_date | description\n[Rules Data] SYS-R-100 | Standard LTV Check | Underwriting_Engine | ltv_ratio | LTE | 80 | Percent | 2024-02-05 | Max LTV for standard loans.\n[Rules Data] SYS-R-101 | High Risk LTV Check | Underwriting_Engine | ltv_ratio | LTE | 80 | Percent | 2024-02-05 | Max LTV for credit score < 600. (Matches Policy 1.2)\n[Rules Data] SYS-R-102 | DTI Threshold | Affordability_Calc | dti_ratio | LTE | 45 | Percent | 2023-01-01 | NON-COMPLIANCE SEED #1: Policy says 43%, but code is hardcoded to 45% (Loose Constraint).\n[Rules Data] SYS-R-103 | KYC ID Count | Onboarding_App | id_doc_count | GTE | 1 | Integer | 2022-06-01 | NON-COMPLIANCE SEED #2: Policy requires 2 IDs, but system only enforces 1 (Stale Config).\n[Rules Data] SYS-R-104 | Min Age Check | Onboarding_App | applicant_age | GT | 18 | Integer | 2020-01-01 | Boundary Condition Bug: Policy implies >= 18. Code uses > 18, so 18-year-olds are rejected.\n[Rules Data] SYS-R-105 | Collateral Value | Appraisal_System | appraisal_value | GT | 0 | Currency | 2024-01-01 | Sanity check for positive appraisal value.",
+  "total_sheets": 1,
+  "total_char_count": 1202
+}

@@ -1,0 +1,15 @@
+Document: Global Retail Lending Policy Manual (v2.4)
+Effective Date: 2024-02-01 Owner: Credit Risk Committee Classification: Internal Use Only
+1. Credit Risk Parameters
+1.1 Standard Loan-to-Value (LTV) Limits To ensure prudent lending practices, the Bank establishes maximum LTV ratios for all retail mortgage products.
+Policy Rule: For standard residential mortgages, the maximum Loan-to-Value (LTV) ratio is capped at 80%. Loans exceeding this amount require explicit approval from the Chief Risk Officer.
+1.2 High-Risk Borrower Adjustments The Bank defines "High-Risk Borrowers" as individuals with a FICO Credit Score below 600.
+Policy Rule: In order to remain competitive while managing risk, the maximum LTV for High-Risk Borrowers is capped at 80%.
+(Note: This is consistent with our standard cap, as we believe credit score alone should not dictate LTV tighter than the standard).
+2. Borrower Eligibility & Affordability
+2.1 Identity Verification (KYC) The Bank adheres to strict Anti-Money Laundering (AML) standards.
+Policy Rule: Loan Officers must collect and verify a minimum of two (2) distinct forms of government-issued identification (e.g., Passport, Driver's License) for every applicant.
+2.2 Debt-to-Income (DTI) Ratios Affordability is calculated based on Gross Monthly Income.
+Policy Rule: The Total Debt-to-Income (DTI) ratio must not exceed 43%. Applicants with DTI above this threshold are automatically declined.
+3. Collateral Valuation
+3.1 Appraisal Requirements All properties must undergo a full interior and exterior appraisal by a licensed third-party appraiser.
