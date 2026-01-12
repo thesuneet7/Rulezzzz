@@ -421,6 +421,8 @@ def main():
         json.dump(clauses, f, indent=2, ensure_ascii=False)
     print(f"✓ Saved: {rules_output}")
     
+    
+'''    
     # 3. Summary
     summary = {
         "extraction_timestamp": datetime.now().isoformat(),
@@ -472,6 +474,7 @@ def main():
     
     return clauses
 
+'''
 
 if __name__ == "__main__":
     main()
