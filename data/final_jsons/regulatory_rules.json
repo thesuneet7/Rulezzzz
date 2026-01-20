@@ -23,7 +23,7 @@
     "compliance_check": "Verify that the LTV ratio does not exceed 80%",
     "risk_level": "HIGH",
     "source_text": "REG-MORT-001 - Retail Mortgage Lending Standards Act\nSection: 4.1.a | Effective: 2024-01-01\nText: For all standard retail mortgage loans secured by a principal residence, the Loan-to-Value (LTV) ratio shall not exceed 80% without private mortgage insurance.\nParam: LTV_Standard_Max | Val: 80.0 | Op: LTE",
-    "extracted_at": "2026-01-12T23:25:29.732301"
+    "extracted_at": "2026-01-21T01:57:09.033110"
   },
   {
     "clause_id": "REG-MORT-002",
@@ -49,7 +49,7 @@
     "compliance_check": "Verify that the LTV ratio for high-risk borrowers does not exceed 75%",
     "risk_level": "HIGH",
     "source_text": "REG-MORT-002 - Retail Mortgage Lending Standards Act\nSection: 4.1.b | Effective: 2024-01-01\nText: For high-risk borrowers (defined as Credit Score < 600), the maximum allowable Loan-to-Value (LTV) ratio is strictly capped at 75%.\nParam: LTV_HighRisk_Max | Val: 75.0 | Op: LTE",
-    "extracted_at": "2026-01-12T23:25:55.828535"
+    "extracted_at": "2026-01-21T01:57:29.376212"
   },
   {
     "clause_id": "CLAUSE-003",
@@ -75,7 +75,7 @@
     "compliance_check": "Verify that all mortgage applicants provide at least two distinct forms of government-issued identification prior to loan origination.",
     "risk_level": "LOW",
     "source_text": "REG-KYC-105 - Anti-Money Laundering (AML) Directive\nSection: 12.3 | Effective: 2023-06-15\nText: All mortgage applicants must provide at least two (2) distinct forms of government-issued identification prior to loan origination.\nParam: Min_ID_Count | Val: 2 | Op: GTE",
-    "extracted_at": "2026-01-12T23:26:13.214692"
+    "extracted_at": "2026-01-21T01:57:45.260966"
   },
   {
     "clause_id": "REG-ENV-099",
@@ -101,7 +101,7 @@
     "compliance_check": "Verify that the mortgage contract includes mandatory flood insurance coverage equal to the full replacement cost of the property.",
     "risk_level": "HIGH",
     "source_text": "REG-ENV-099 - Climate Risk & Flood Protection Act\nSection: 22.1 | Effective: 2024-01-01\nText: Mortgages for properties located in designated 'Zone A' flood areas must require mandatory flood insurance coverage equal to the full replacement cost of the property.\nParam: Flood_Insurance_Mandatory | Val: True | Op: EQUALS",
-    "extracted_at": "2026-01-12T23:26:36.573592"
+    "extracted_at": "2026-01-21T01:58:04.495121"
   },
   {
     "clause_id": "REG-INC-201",
@@ -127,6 +127,6 @@
     "compliance_check": "Calculate the DTI ratio and ensure it does not exceed 43%",
     "risk_level": "LOW",
     "source_text": "REG-INC-201 - Fair Lending & Affordability Act\nSection: 8.4 | Effective: 2023-01-01\nText: The Debt-to-Income (DTI) ratio for any qualified mortgage must not exceed 43% of the borrower's gross monthly income.\nParam: DTI_Max | Val: 43.0 | Op: LTE",
-    "extracted_at": "2026-01-12T23:26:58.704616"
+    "extracted_at": "2026-01-21T01:58:20.765382"
   }
 ]
